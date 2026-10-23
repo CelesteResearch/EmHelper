@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>Celeste.Mods.EmHelper</AssemblyName>
+        <RootNamespace>Celeste.Mods.EmHelper</RootNamespace>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference
+            Include="$(SharedRoot)/src/Celeste.Game.Runtime/Celeste.Game.Runtime.csproj"
+            Private="false"
+        />
+        <ProjectReference
+            Include="$(SharedRoot)/vendor/MonoMod/src/MonoMod.Utils/MonoMod.Utils.csproj"
+            Private="false"
+        />
+        <PackageReference Include="MonoMod.RuntimeDetour" Version="25.3.6" />
+        <ProjectReference Include="../PandorasBox/Celeste.Mods.PandorasBox.csproj" Private="false" />
+    </ItemGroup>
+</Project>
